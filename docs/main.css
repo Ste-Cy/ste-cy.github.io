@@ -1,0 +1,96 @@
+body {
+  padding: clamp(1rem, 0.3312rem + 3.0573vw, 4rem);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  height: 64px;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  width: 128px;
+  padding: 8px;
+  font-size: 20px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: clamp(2rem, 1.1083rem + 4.0764vw, 6rem);
+  line-height: 1.5em;
+  margin-bottom: 32px;
+  color: #000;
+}
+
+h2 {
+  font-family: "Source Code Pro", monospace;
+  font-size: clamp(1rem, 0.7771rem + 1.0191vw, 2rem);
+}
+
+.social-icons {
+  width: 70%;
+  max-width: 800px;
+  font-size: clamp(2rem, 1.7771rem + 1.0191vw, 3rem);
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.social-icons a {
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+.info {
+  align-self: center;
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.hand {
+  display: inline-block;
+  animation: anim 0.2s linear infinite alternate;
+}
+
+@keyframes anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
